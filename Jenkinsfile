@@ -30,7 +30,7 @@ pipeline {
         }
         stage ('Deploy to Production'){
             steps{
-                timeout (time: 1, unit:'MINUTES'){
+                timeout (time: 1, unit:'DAYS'){
                     input message: 'Approve PRODUCTION Deployment?'
                 }
                 
